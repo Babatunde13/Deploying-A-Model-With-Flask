@@ -8,7 +8,12 @@
 <body>
     <h1>Hello Welcome</h1>
     <p>
-        The house price of house with LSTAT={lstat} and RM={rm} is {predict}
+        The house price of house with LSTAT={{ lstat }} and RM={{ rm }} is {{ predict }}
+        {% if rm > 1%}
+        <p>I love you</p>
+        {% else %}
+        <p>I hate you</p>
+        {% endif %}
     </p>
 </body>
 </html>
