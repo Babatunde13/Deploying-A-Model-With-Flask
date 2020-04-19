@@ -15,7 +15,7 @@ def home():
         return render_template('predicted.html', rm=rm, lstat=lstat, predict=predict)
     return render_template('home.html')
 
-@app.route('/prediction', methods='POST')
-def prediction():
+# @app.route('/prediction', methods='POST')
+# def prediction():
     
-    return render_template('predicted.html', rm=rm, lstat=lstat, predict=predict)
+#     return render_template('predicted.html', rm=rm, lstat=lstat, predict=predict)
