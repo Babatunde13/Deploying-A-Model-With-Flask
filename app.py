@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/home/', method=['POST', 'GET'])
 def home():
-    if request.method = 'POST'
+    if request.method == 'POST'
         rm = request.form['RM']
         lstat = request.form['LSTAT']
         predict = model.predict([rm, lstat])
