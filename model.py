@@ -32,4 +32,3 @@ model.fit(X_train, y_train)
 # print('Training evaluation', model.score(X_train, y_train))
 # print('Testing evaluation', model.score(X_test, y_test))
 
-print(data.DESCR)
