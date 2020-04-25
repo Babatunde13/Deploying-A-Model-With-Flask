@@ -5,15 +5,14 @@ from model import model
 
 app = Flask(__name__)
 
-@app.route('/prediction')
+@app.route('/prediction/')
 def prediction():
     
     return render_template('predicted.html', rm=1, lstat=1, predict=1)
 
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 @app.route('/home/', methods=['POST', 'GET'])
-def home():
     if request.method == 'POST':
        
         rm = request.form['RM']
